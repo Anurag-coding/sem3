@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+</style>
+</head>
+<body>
+<h1>Favorite Movies/Tv Shows</h1>
+<hr>
+<ol>
+<li><img width="18%" src="uri.jpeg"></img><br><a href="https://www.imdb.com/title/tt8291224/" target="_blank">Uri:The Surgical Strike</a></li>
+<li><img width="18%" src="https://www.koimoi.com/wp-content/new-galleries/2022/10/rrr-box-office-japan-update-01.jpg"></img><br><a href="https://www.imdb.com/title/tt8178634/?ref_=fn_al_tt_1" target="_blank">RRR</a></li>
+<li><img width="18%" src="https://m.media-amazon.com/images/S/pv-target-images/149ac783c0e32bfecd62d2d447b5c36d304d5a5afe30db4d701dc93dc8bba5b0.jpg"></img><br><a href="https://www.imdb.com/title/tt10698680/?ref_=nv_sr_srsg_3_tt_5_nm_3_in_0_q_kgf" target="_blank">KGF chapter-1</a></li>
+<li><img width="18%" src="https://i.ytimg.com/vi/kQDd1AhGIHk/maxresdefault.jpg"></img><br><a href="https://www.imdb.com/title/tt12735488/?ref_=fn_al_tt_1" target="_blank">Kalki</a></li>
+</ol>
+</body>
+</html> 
