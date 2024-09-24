@@ -1,0 +1,11 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <title>q2</title>
+</head>
+<body>
+<h1> My Image Gallery </h1><hr>
+<a href=" "><img src="soa.jpg "width="200px" height="150px"></a> 
+
+</body>
+</html>

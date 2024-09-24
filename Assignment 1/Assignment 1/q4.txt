@@ -1,0 +1,29 @@
+<!DOCTYPE>
+<html>
+<head>
+<style>
+table{
+ border: 1px solid red;
+}
+</style>
+</head>
+<body>
+<h1> My weekly schedule </h1>
+<table style="width:70%">
+<tr>
+<th> Day </th>
+<th> Activities </th>
+</tr>
+<td> Monday</td>
+<td> class</td>
+</tr>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+

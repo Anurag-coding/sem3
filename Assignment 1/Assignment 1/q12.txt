@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<h1 tabindex="1">heading1</h1>
+<h1 tabindex="2">heading2</h1>
+<h1 tabindex="3">heading3</h1>
+<h1 tabindex="4">heading4</h1>
+<h1 tabindex="5">heading5</h1>
+<a href="https://www.imdb.com/title/tt27470893/" target="_blank"accesskey="n">press alt+n to open a new page.</a>
+<p draggable="True"> This is very useful.</p>
+<p  contenteditable="True">U can edit the paragraph.</p> 
+</body>
+</html>
