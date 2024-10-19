@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html >
+<head>
+       <title>Absolute</title>
+    <style>
+        .image{
+            width: 400px;
+            height: 400px;
+            border: 2px solid blue;
+            padding: 10px;
+            position: absolute;
+        }
+
+        .image{
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+<body>
+    <div class="image">
+        <img src="msd3.jpg" >
+    </div>
+</body>
+</html>

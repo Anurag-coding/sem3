@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+  	<title>SOA Logo List</title>
+  	<style>
+	ul {list-style-image:url("dove.jpeg");padding-left: 200px;}
+	ul li {background-image:url("iphone.jpg");background-size: 150px 150px;background-repeat: no-repeat;background-position: 0px 3px;font-family: sans-serif;}
+	</style>
+</head>
+<body>
+	<ul>
+    	<li>Item 1</li>
+    	<li>Item 2</li>
+    	<li>Item 3</li>
+      	</ul>
+</body>
+</html>

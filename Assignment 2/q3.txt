@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang>
+<head>
+    <title>Hover Effect</title>
+    <style>
+        #specialDiv {
+            color: black;
+        }
+        #hoverImage:hover + #specialDiv {
+            color: red;
+        }
+        #hoverImage {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <img id="hoverImage" src="surya.jpeg" alt="Hover over me">
+    <div id="specialDiv">My Special Div</div>
+</body>
+</html>

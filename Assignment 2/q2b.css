@@ -1,0 +1,27 @@
+body {
+    display: flex;
+    justify-content: space-around;
+    background-color: pink;
+    font-family: Arial, sans-serif;
+}
+
+.product-container {
+    width: 500px;
+    padding: 20px;
+    border: 10px solid black ;
+    margin: 15px;
+    background-color: white;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.product-container img {
+    max-width: 100%;
+    height: 300px;
+}
+
+.product-container p {
+    margin-top: 10px;
+    font-size: 16px;
+    color: #333;
+}
