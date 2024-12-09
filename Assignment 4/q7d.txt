@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page 3</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="bg-success text-white text-center py-3">
+        <h1>Page 3</h1>
+    </header>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination justify-content-center">
+            <li class="page-item"><a class="page-link" href="q7.html" target="_blank">1</a></li>
+            <li class="page-item "><a class="page-link" href="q7b.html" target="_blank">2</a></li>
+            <li class="page-item "><a class="page-link" href="q7c.html" target="_blank">3</a></li>
+            <li class="page-item active"><a class="page-link" href="q7d.html" target="_blank">4</a></li>
+        </ul>
+    </nav>
+</body>
+</html>
