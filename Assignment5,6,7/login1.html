@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Dropdown Menus</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css">
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+	 	<script	src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
+ <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js">
+</script>
+<script>
+    $(document).ready(function() {
+        $("#searchBar").on("keyup", function() {
+            var value = $(this).val().toLowerCase();
+            $("#studentTable tbody tr").filter(function() {
+                $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+            });
+        });
+        $(".edit-btn").click(function() {
+            const row = $(this).closest('tr');
+                const cells = row.find('td:not(:last-child)');
+                if ($(this).text() === 'Edit') {
+                    cells.each(function () {
+                        const currentValue = $(this).text();
+                        $(this).html(`<input type='text' value='${currentValue}' />`);
+                    });
+                    $(this).text('Save');
+                } else {
+                    cells.each(function () {
+                        const newValue = $(this).find('input').val();
+                        $(this).text(newValue);
+                    });
+                    $(this).text('Edit');
+                }
+    });
+        $(".delete-btn").click(function() {
+            if (confirm("Are you sure you want to delete this student?")) {
+                $(this).closest('tr').remove();
+            }
+        });
+        $("#addRowButton").click(function () {
+                const newRow = ` <tr>
+                    <td> Enter name </td>
+                    <td> Enter age </td>
+                    <td> Enter semester </td>
+                    <td> Enter registation no. </td>
+                    <td>
+                        <button class="edit-btn">Edit</button>
+                        <button class="delete-btn">Delete</button>
+                    </td>
+                </tr>`;
+                $('#studentTable tbody').append(newRow);
+            });
+       });
+</script>
+
+</head>
+    <title>Student Information</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        table {
+          border-collapse: collapse;
+          width: 100%; 
+          margin:20px auto;
+        }
+        th, td {
+            border: 1px solid rgb(44, 18, 135);
+            padding: 10px;
+            text-align: left;
+        }
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+        tr:hover {
+            background-color: #ddd;
+        }
+        .edit-btn {
+            background-color: #842cad; 
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        .delete-btn {
+            background-color: #31247e; /* Red */
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            cursor: pointer;
+        }
+        #searchBar {
+            margin-bottom: 20px;
+            padding: 10px;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+   <img src="logo.jpg" alt="School Logo">
+    <h2>Student Information Table</h2>
+<div class="container">
+  <div class="btn-group">
+ <button type="button" class="btn btn-primary"> Admission </button>
+ <div class="btn-group">
+ <button type="button" class="btn btn-primary dropdown-toggle"data-toggle="dropdown"> Achievements </button>
+ <div class="dropdown-menu">
+ <a class="dropdown-item" href="./login3.html"> Gallery </a>
+ </div>
+ </div>
+ <div class="btn-group">
+ <button type="button" class="btn btn-primary dropdown-toggle"data-toggle="dropdown"> Alumni on focus </button>
+ <div class="dropdown-menu">
+ <a class="dropdown-item" href="./login4.html"> card </a>
+ </div>
+</div>
+</div>
+</div>
+
+
+<input type="text" id="searchBar" placeholder="Search for names..">
+<table id="studentTable">
+    <thead>
+        <tr>
+            <th>Name</th>
+            <th>Age</th>
+            <th>Semester</th>
+            <th>Registration Number</th>
+            <th>Actions</th>
+            
+        </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td> Anurag kumar </td>
+        <td> 22</td>
+        <td> 3rd </td>
+        <td> 2341011432 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Rahul kumar </td>
+        <td> 20 </td>
+        <td> 2nd</td>
+        <td> 234101564 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> sohan raj </td>
+        <td> 20 </td>
+        <td> 3rd </td>
+        <td> 2341012232 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Mohan </td>
+        <td> 23 </td>
+        <td> 4th </td>
+        <td> 2341058732 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Piyush jaiswal </td>
+        <td> 24 </td>
+        <td> 4th </td>
+        <td> 2341011762 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Somaya ranjan </td>
+        <td> 20 </td>
+        <td> 3rd </td>
+        <td> 2341010005 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Aditya sharma </td>
+        <td> 18</td>
+        <td> 1st</td>
+        <td> 2341098743 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Ashish singh </td>
+        <td> 19 </td>
+        <td> 1st </td>
+        <td> 2341099432 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+      <tr>
+        <td> Aditya singh </td>
+        <td> 20</td>
+        <td> 1st</td>
+        <td> 2341098743 </td>
+        <td>
+          <button class="edit-btn">Edit</button>
+          <button class="delete-btn">Delete</button>
+       </td>
+      </tr>
+    </tbody>
+</table>
+<button id="addRowButton"
+        style="margin: 20px auto; display: block; padding: 10px 20px; background-color: #007BFF; color: white; border: none; cursor: pointer; border-radius: 4px;">Add
+        Row</button>
+
+</body>
+</html>

@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Management form </title>
+</head>
+<body>
+    <h1> School Management System </h1>
+    <P> As we enter the digital age, more schools are adopting school management systems to improve their operations and increase efficiency. A reliable school management system.</P>
+</body>
+</html>
